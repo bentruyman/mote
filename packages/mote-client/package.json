@@ -10,9 +10,18 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
+    "build": "parcel build src/index.html",
+    "clean": "del .cache dist",
+    "dev": "parcel src/index.html"
   },
   "dependencies": {
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.1.0",
+    "parcel-bundler": "^1.9.7",
+    "typescript": "^2.9.2",
+    "vue-template-compiler": "^2.5.16"
   }
 }
