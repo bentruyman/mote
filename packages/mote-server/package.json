@@ -1,0 +1,18 @@
+{
+  "name": "mote-server",
+  "version": "1.0.0",
+  "description": "Back-End server for Mote Client",
+  "author": "Ben Truyman <ben@truyman.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bentruyman/mote#readme",
+  "repository": "https://github.com/bentruyman/mote/tree/master/packages/mote-server",
+  "bugs": "https://github.com/bentruyman/mote/issues",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

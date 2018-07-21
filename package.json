@@ -1,0 +1,11 @@
+{
+  "name": "mote",
+  "private": true,
+  "author": "Ben Truyman <ben@truyman.com>",
+  "license": "MIT",
+  "scripts": {
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}
