@@ -1,11 +1,13 @@
-import Hapi from 'hapi';
+import * as Hapi from 'hapi';
 
-const server = Hapi.server({
+const server = new Hapi.Server({
   port: 5678
 });
 
-const init = async  () => {
+const init = async (): Promise<void> => {
   await server.start();
-}
+};
 
-init();
+init()
+  .then(console.log)
+  .catch(console.error);

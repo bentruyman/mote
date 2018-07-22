@@ -1,10 +1,9 @@
 <template>
-  <div id="app">
-  </div>
+  <div id="app" />
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default class App extends Vue {}
 </script>

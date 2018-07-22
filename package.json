@@ -4,8 +4,76 @@
   "author": "Ben Truyman <ben@truyman.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint --ext .ts,.vue 'packages/*/src/**/*.{ts,vue}'"
   },
   "devDependencies": {
-    "lerna": "^2.11.0"
+    "eslint": "^5.2.0",
+    "eslint-config-semistandard": "^12.0.1",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "eslint-plugin-vue": "^4.7.0",
+    "lerna": "^2.11.0",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^16.0.1",
+    "vue-eslint-parser": "^3.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "semistandard",
+      "plugin:vue/strongly-recommended"
+    ],
+    "parserOptions": {
+      "parser": "typescript-eslint-parser"
+    },
+    "plugins": [
+      "typescript",
+      "vue"
+    ],
+    "rules": {
+      "no-undef": 0,
+      "typescript/adjacent-overload-signatures": "error",
+      "typescript/class-name-casing": "error",
+      "typescript/explicit-function-return-type": [
+        "error",
+        {
+          "allowExpressions": true
+        }
+      ],
+      "typescript/interface-name-prefix": [
+        "error",
+        "always"
+      ],
+      "typescript/member-delimiter-style": "error",
+      "typescript/member-naming": [
+        "error",
+        {
+          "private": "^_"
+        }
+      ],
+      "typescript/member-ordering": "error",
+      "typescript/no-angle-bracket-type-assertion": "error",
+      "typescript/no-array-constructor": "error",
+      "typescript/no-empty-interface": "error",
+      "typescript/no-explicit-any": "error",
+      "typescript/no-inferrable-types": "error",
+      "typescript/no-namespace": [
+        "error",
+        {
+          "allowDefinitionFiles": true
+        }
+      ],
+      "typescript/no-non-null-assertion": "error",
+      "typescript/no-parameter-properties": "error",
+      "typescript/no-triple-slash-reference": "error",
+      "typescript/no-type-alias": "error",
+      "typescript/no-unused-vars": "error",
+      "typescript/no-use-before-define": "error",
+      "typescript/no-var-requires": "error",
+      "typescript/type-annotation-spacing": "error"
+    }
   }
 }
