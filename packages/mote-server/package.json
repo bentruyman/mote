@@ -10,8 +10,10 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
+    "clean": "del .cache dist",
+    "build": "parcel build src/index.ts",
     "dev": "parcel src/index.ts",
-    "build": "parcel build src/index.ts"
+    "test": "jest"
   },
   "dependencies": {
     "hapi": "^17.5.2"
@@ -20,7 +22,9 @@
     "@types/hapi": "^17.0.15",
     "@types/node": "^10.5.2",
     "del-cli": "^1.1.0",
+    "jest": "^23.4.1",
     "parcel-bundler": "^1.9.7",
+    "ts-jest": "^23.0.1",
     "typescript": "^2.9.2"
   }
 }

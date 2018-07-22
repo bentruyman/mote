@@ -12,7 +12,8 @@
   "scripts": {
     "build": "parcel build src/index.html",
     "clean": "del .cache dist",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "test": "jest"
   },
   "dependencies": {
     "vue": "^2.5.16",
@@ -20,7 +21,9 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.1.0",
+    "jest": "^23.4.1",
     "parcel-bundler": "^1.9.7",
+    "ts-jest": "^23.0.1",
     "typescript": "^2.9.2",
     "vue-template-compiler": "^2.5.16"
   }
