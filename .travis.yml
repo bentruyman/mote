@@ -8,5 +8,4 @@ node_js:
 install:
   - npm run bootstrap
 script:
-  - npm run lint
-  - npm test
+  - npm run ci

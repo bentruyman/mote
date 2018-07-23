@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap --hoist",
+    "ci": "npm run lint && npm run test",
     "clean": "lerna run clean",
     "lint": "eslint --ext .ts,.vue 'packages/*/src/**/*.{ts,vue}'",
     "reset": "del ./{,packages/*}/{node_modules,package-lock.json}",
