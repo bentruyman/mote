@@ -7,6 +7,36 @@
 
 ## Usage
 
+### Development
+
+#### Build Tasks
+
+For simplicity, this project uses npm scripts for task management. Below are
+the tasks that can be invoked from the root of the project via
+`npm run <script>`.
+
+##### `bootstrap`
+
+Runs the `reset` task as well as installing the dependencies for the entire
+project.
+
+##### `clean`
+
+Runs the `clean` task of each package in the project.
+
+##### `lint`
+
+Runs `eslint` over all source code in the entire project.
+
+##### `reset`
+
+Removes all `node_modules` directories and `package-lock.json` files from a
+project (e.g. in order to generate a clean dependency tree).
+
+##### `test`
+
+Runs the `test` task of each package in the project.
+
 ## Hardware
 
 ### Setting up iPad Mini
