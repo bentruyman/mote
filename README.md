@@ -5,6 +5,8 @@
 **mote** is an remote system for my home theater visually optimized for the
 **iPad Mini**.
 
+![screenshot of the iPad user interface](https://user-images.githubusercontent.com/85315/43060207-c2f4c844-8e04-11e8-918e-bc645c1e8920.png)
+
 ## Usage
 
 > TODO: add content
