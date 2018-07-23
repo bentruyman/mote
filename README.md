@@ -7,6 +7,8 @@
 
 ## Usage
 
+> TODO: add content
+
 ### Development
 
 To get started, after cloning this project, run `npm run bootstrap` to get
@@ -39,9 +41,17 @@ project (e.g. in order to generate a clean dependency tree).
 
 Runs the `test` task of each package in the project.
 
+### Deployment
+
+> TODO: add content, instructions on how to use the Dockerfiles
+
 ## Hardware
 
+> TODO: add content
+
 ### Setting up iPad Mini
+
+> TODO: add content
 
 ## Known Issues
 
