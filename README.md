@@ -17,8 +17,7 @@ the tasks that can be invoked from the root of the project via
 
 ##### `bootstrap`
 
-Runs the `reset` task as well as installing the dependencies for the entire
-project.
+Installs the dependencies for the entire project.
 
 ##### `clean`
 
