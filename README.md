@@ -9,6 +9,9 @@
 
 ### Development
 
+To get started, after cloning this project, run `npm run bootstrap` to get
+started.
+
 #### Build Tasks
 
 For simplicity, this project uses npm scripts for task management. Below are
