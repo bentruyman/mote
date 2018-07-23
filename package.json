@@ -4,8 +4,8 @@
   "author": "Ben Truyman <ben@truyman.com>",
   "license": "MIT",
   "scripts": {
+    "bootstrap": "npm run reset && npm install && lerna bootstrap --hoist",
     "clean": "lerna run clean",
-    "bootstrap": "npm run clean && npm install && lerna bootstrap --hoist",
     "lint": "eslint --ext .ts,.vue 'packages/*/src/**/*.{ts,vue}'",
     "reset": "del ./{,packages/*}/{node_modules,package-lock.json}",
     "test": "lerna run test"
