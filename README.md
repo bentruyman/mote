@@ -1,4 +1,4 @@
-# mote
+# mote ![build status](https://travis-ci.com/bentruyman/mote.svg?token=WG2dmqzz1mFcaGcJe57N&branch=master)
 
 > ⚠️ **WARNING**: this is side project, don't expect production-ready code
 
