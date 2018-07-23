@@ -41,7 +41,12 @@ export class StaticServer {
 }
 
 export function createBrowser (): Promise<pupetteer.Browser> {
-  return pupetteer.launch();
+  return pupetteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ]
+  });
 }
 
 export function createServer (port = DEFAULT_SERVER_PORT): StaticServer {
