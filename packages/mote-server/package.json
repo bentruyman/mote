@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsc --outDir dist",
-    "clean": "del .cache dist",
+    "clean": "del dist",
     "dev": "npm run build -- --watch",
     "docker-build": "docker build -t bentruyman/mote-server .",
     "start": "node ./dist/start.js",
