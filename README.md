@@ -30,6 +30,11 @@ Installs the dependencies for the entire project.
 
 Runs the `clean` task of each package in the project.
 
+##### `docker-build`
+
+Builds Docker images for each package. Read the [Docker](#docker) section for more
+information.
+
 ##### `lint`
 
 Runs `eslint` over all source code in the entire project.
@@ -47,6 +52,10 @@ Runs the `test` task of each package in the project.
 
 > TODO: add content, instructions on how to use the Dockerfiles
 
+#### Docker
+
+> TODO: describe how to use the images, expected ports/volumes
+
 ## Hardware
 
 > TODO: add content
@@ -60,6 +69,9 @@ Runs the `test` task of each package in the project.
 - npm install warnings:
   - `eslint-config-standard@12.0.0-alpha.0`: https://github.com/standard/eslint-config-standard/issues/114
   - `eslint-plugin-vue@4.7.0`: https://github.com/vuejs/eslint-plugin-vue/pull/504
+- parcel + hapi:
+  - parcel must upgrade to babel 7: https://github.com/parcel-bundler/parcel/issues/868
+  - https://github.com/hapijs/boom/pull/185
 
 ## License
 

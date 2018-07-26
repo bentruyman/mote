@@ -1,13 +1,9 @@
-import * as Hapi from 'hapi';
+import * as express from 'express';
 
-const server = new Hapi.Server({
-  port: 5678
-});
+export default class App {
+  server: express.Express;
 
-const init = async (): Promise<void> => {
-  await server.start();
-};
-
-init()
-  .then(console.log)
-  .catch(console.error);
+  constructor () {
+    this.server = express();
+  }
+}

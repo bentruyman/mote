@@ -13,6 +13,7 @@
     "build": "parcel build src/index.html",
     "clean": "del .cache dist",
     "dev": "parcel src/index.html",
+    "docker-build": "docker build -t bentruyman/mote-client .",
     "test": "npm run test:unit && npm run test:functional",
     "test:functional": "npm run build && jest __tests__/functional",
     "test:unit": "jest __tests__/unit"
