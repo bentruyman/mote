@@ -1,6 +1,6 @@
 import * as pupetteer from 'puppeteer';
 
-import { createBrowser, createServer, StaticServer } from './helpers';
+import { createBrowser, createServer, StaticServer } from './test/helpers';
 
 let browser: pupetteer.Browser;
 let server: StaticServer;
