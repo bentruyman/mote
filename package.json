@@ -10,7 +10,7 @@
     "docker-build": "lerna run docker-build",
     "lint": "eslint --ext .js,.ts,.vue .",
     "reset": "del ./{,packages/*}/{node_modules,package-lock.json}",
-    "test": "lerna run test"
+    "test": "lerna run --concurrency 1 --stream test"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
