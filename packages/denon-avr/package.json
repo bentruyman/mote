@@ -1,0 +1,29 @@
+{
+  "name": "denon-avr",
+  "version": "1.0.0",
+  "description": "Denon AVR Client Library",
+  "author": "Ben Truyman <ben@truyman.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bentruyman/mote#readme",
+  "repository": "https://github.com/bentruyman/mote/tree/master/packages/denon-avr",
+  "bugs": "https://github.com/bentruyman/mote/issues",
+  "main": "index.js",
+  "keywords": [],
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "clean": "del .cache dist",
+    "dev": "npm run build -- --watch",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.5.3",
+    "del-cli": "^1.1.0",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.2"
+  }
+}

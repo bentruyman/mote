@@ -1,0 +1,32 @@
+import { Command } from '../command';
+
+export default new Command('SI', [
+  { type: 'getter', description: 'gets current input' },
+  { type: 'setter', label: 'bd', value: 'BD', description: "selects the 'BD' input" },
+  { type: 'setter', label: 'cd', value: 'CD', description: "selects the 'CD' input" },
+  { type: 'setter', label: 'dock', value: 'DOCK', description: "selects the 'DOCK' input" },
+  { type: 'setter', label: 'dvd', value: 'DVD', description: "selects the 'DVD' input" },
+  { type: 'setter', label: 'dvr', value: 'DVR', description: "selects the 'DVR' input" },
+  { type: 'setter', label: 'favorites', value: 'FAVORITES', description: "selects the 'FAVORITES' input" },
+  { type: 'setter', label: 'flickr', value: 'FLICKR', description: "selects the 'FLICKR' input" },
+  { type: 'setter', label: 'fvp', value: 'FVP', description: "selects the 'FVP' input" },
+  { type: 'setter', label: 'game', value: 'GAME', description: "selects the 'GAME' input" },
+  { type: 'setter', label: 'game2', value: 'GAME2', description: "selects the 'GAME2' input" },
+  { type: 'setter', label: 'hdradio', value: 'HDRADIO', description: "selects the 'HDRADIO' input" },
+  { type: 'setter', label: 'ipd', value: 'IPD', description: "selects the 'IPD' input" },
+  { type: 'setter', label: 'ipod', value: 'IPOD', description: "selects the 'IPOD' input" },
+  { type: 'setter', label: 'iradio', value: 'IRADIO', description: "selects the 'IRADIO' input" },
+  { type: 'setter', label: 'lastfm', value: 'LASTFM', description: "selects the 'LASTFM' input" },
+  { type: 'setter', label: 'napster', value: 'NAPSTER', description: "selects the 'NAPSTER' input" },
+  { type: 'setter', label: 'net/usb', value: 'NET/USB', description: "selects the 'NET/USB' input" },
+  { type: 'setter', label: 'pandora', value: 'PANDORA', description: "selects the 'PANDORA' input" },
+  { type: 'setter', label: 'phono', value: 'PHONO', description: "selects the 'PHONO' input" },
+  { type: 'setter', label: 'rhapsody', value: 'RHAPSODY', description: "selects the 'RHAPSODY' input" },
+  { type: 'setter', label: 'sat/cbl', value: 'SAT/CBL', description: "selects the 'SAT/CBL' input" },
+  { type: 'setter', label: 'server', value: 'SERVER', description: "selects the 'SERVER' input" },
+  { type: 'setter', label: 'tuner', value: 'TUNER', description: "selects the 'TUNER' input" },
+  { type: 'setter', label: 'tv', value: 'TV', description: "selects the 'TV' input" },
+  { type: 'setter', label: 'usb', value: 'USB', description: "selects the 'USB' input" },
+  { type: 'setter', label: 'usb/ipod', value: 'USB/IPOD', description: "selects the 'USB/IPOD' input" },
+  { type: 'setter', label: 'v.aux', value: 'V.AUX', description: "selects the 'V.AUX' input" }
+]);
