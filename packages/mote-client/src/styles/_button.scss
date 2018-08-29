@@ -1,0 +1,13 @@
+.button {
+  color: #fff;
+  background-color: #515B61;
+  border: 0;
+  border-radius: 2px;
+  transition: background-color 250ms ease-in-out;
+  display: flex;
+}
+
+.button:hover,
+.button.active {
+  background-color: #637783;
+}

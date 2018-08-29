@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>night</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1333.000000, -1298.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Modes">
+            <g transform="translate(400.000000, 1257.000000)">
+                <g id="Night" transform="translate(848.000000, 0.000000)">
+                    <g id="Label" transform="translate(85.000000, 35.000000)">
+                        <path d="M22.4725677,17.5640088 C22.4725677,13.459644 23.299683,9.55815655 24.7978542,6 C10.565228,9.4489149 0,22.2613997 0,37.5396245 C0,55.4552548 14.5447452,70 32.4603755,70 C47.7386003,70 60.5510851,59.434772 64,45.2021458 C60.4418435,46.700317 56.5247501,47.5274323 52.4359912,47.5274323 C35.8936845,47.5274323 22.4725677,34.1063155 22.4725677,17.5640088 Z" id="night"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

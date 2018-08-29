@@ -11,7 +11,8 @@
     "vue"
   ],
   "rules": {
-    "no-undef": 0
+    "no-undef": 0,
+    "vue/max-attributes-per-line": 0
   },
   "overrides": [
     {
