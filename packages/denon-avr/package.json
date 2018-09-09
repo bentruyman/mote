@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^10.5.3",
     "del-cli": "^1.1.0",
+    "jest": "^23.5.0",
     "typescript": "^2.9.2"
   }
 }

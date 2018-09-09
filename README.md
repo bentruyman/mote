@@ -46,7 +46,7 @@ project (e.g. in order to generate a clean dependency tree).
 
 ##### `test`
 
-Runs the `test` task of each package in the project.
+Runs the tests in each package in the project.
 
 ### Deployment
 

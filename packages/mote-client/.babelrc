@@ -6,9 +6,7 @@
     [
       "env",
       {
-        "targets": {
-          "ios": "current"
-        }
+        "targets": "current ios"
       }
     ]
   ]
