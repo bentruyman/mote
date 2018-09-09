@@ -31,6 +31,8 @@ describe('Connection', () => {
       done();
     });
 
-    server.broadcast('message');
+    setTimeout(() => {
+      server.broadcast('message');
+    }, 500);
   });
 });

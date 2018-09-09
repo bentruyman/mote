@@ -14,7 +14,6 @@
     "clean": "del .cache dist",
     "dev": "parcel --port 3000 src/index.html",
     "docker-build": "docker build -t bentruyman/mote-client .",
-    "pretest": "npm run build",
     "test": "jest"
   },
   "dependencies": {
@@ -22,15 +21,10 @@
     "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
-    "@types/node-static": "^0.7.1",
-    "@types/puppeteer": "^1.5.1",
     "@vue/component-compiler-utils": "^2.1.0",
-    "jest": "^23.4.1",
+    "@vue/test-utils": "^1.0.0-beta.25",
     "node-sass": "^4.9.3",
-    "node-static": "^0.7.10",
     "parcel-bundler": "^1.9.7",
-    "puppeteer": "^1.6.0",
-    "ts-jest": "^23.0.1",
     "typescript": "^2.9.2",
     "vue-template-compiler": "^2.5.16"
   }

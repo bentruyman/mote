@@ -10,7 +10,7 @@
     "docker-build": "lerna run docker-build",
     "lint": "eslint --ext .js,.ts,.vue .",
     "reset": "del ./{,packages/*}/{node_modules,package-lock.json}",
-    "test": "lerna run --concurrency 1 --stream test"
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
@@ -24,9 +24,19 @@
     "eslint-plugin-standard": "^3.1.0",
     "eslint-plugin-typescript": "^0.12.0",
     "eslint-plugin-vue": "^4.7.0",
+    "jest": "^23.5.0",
     "lerna": "^2.11.0",
+    "ts-jest": "^23.1.4",
     "typescript": "^2.9.2",
     "typescript-eslint-parser": "^16.0.1",
-    "vue-eslint-parser": "^3.1.1"
+    "vue": "^2.5.16",
+    "vue-eslint-parser": "^3.1.1",
+    "vue-jest": "^2.6.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "jest": {
+    "projects": [
+      "<rootDir>/packages/*/jest.config.js"
+    ]
   }
 }

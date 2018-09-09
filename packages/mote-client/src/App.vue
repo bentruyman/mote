@@ -1,31 +1,40 @@
 <template>
   <div id="app">
-    <div class="button-set inputs">
-      <InputButton type="appletv" />
-      <InputButton type="snes" />
-      <InputButton type="pc" />
-      <InputButton type="switch" />
-      <InputButton type="ps4" />
-      <InputButton type="xboxone" />
-    </div>
-    <div class="button-set modes">
-      <ModeButton label="Normal" type="normal" />
-      <ModeButton label="Direct" type="direct" />
-      <ModeButton label="Night" type="night" />
-    </div>
+    <InputButtons class="inputs" />
+    <ModeButtons class="modes" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 
-import InputButton from './components/InputButton.vue';
-import ModeButton from './components/ModeButton.vue';
+import InputButtons from './components/InputButtons.vue';
+import ModeButtons from './components/ModeButtons.vue';
 
 export default Vue.extend({
+  mounted () {
+    var source = new EventSource('http://localhost:3001/stream');
+
+    source.addEventListener('message', function (e) {
+      console.log({ message: e.data });
+    }, false);
+
+    source.addEventListener('open', function (e) {
+      console.log('open');
+    }, false);
+
+    source.addEventListener('error', function (e) {
+      console.log({ error: e });
+      if (e.target.readyState === EventSource.CLOSED) {
+        console.log('disconnected');
+      } else if (e.target.readyState === EventSource.CONNECTING) {
+        console.log('connected');
+      }
+    }, false);
+  },
   components: {
-    InputButton,
-    ModeButton
+    InputButtons,
+    ModeButtons
   }
 });
 </script>
@@ -53,6 +62,7 @@ body {
 .button-set {
   width: 624px;
   display: flex;
+  align-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
