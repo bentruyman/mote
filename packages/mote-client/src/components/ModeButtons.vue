@@ -3,7 +3,8 @@
     <ModeButton v-for="button in buttons"
                 :key=button.type
                 :label=button.label
-                :type=button.type />
+                :type=button.type
+    />
   </div>
 </template>
 
